@@ -1,8 +1,14 @@
-# React + Vite
+# Multi-Context App: Theme and Authentication
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React app that demonstrates how to manage multiple contexts using the Context API. The app uses utility functions `createProvider` and `combineProviders` to simplify context implementation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Theme Management**: Toggle between Light and Dark themes using `ThemeContext`.
+- **Authentication Management**: Dummy Authentication using `AuthContext`.
+- **Utility Functions**:
+  - `createProvider`: Simplifies provider creation for context.
+  - `combineProviders`: Combines multiple providers for a cleaner component tree.
+- **Scalable Architecture**: Easily extendable for additional contexts.
