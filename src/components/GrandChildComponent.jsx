@@ -1,6 +1,15 @@
 import React, { useContext } from "react";
 import { AuthContext, ThemeContext } from "../context/AppProvider";
 
+/**
+ * A grandchild component that consumes both the AuthContext and ThemeContext.
+ *
+ * This component demonstrates how to use the useContext hook to access values
+ * from multiple contexts.
+ *
+ * @returns {React.ReactElement} - A JSX element containing two sections: one
+ * for the AuthContext, and one for the ThemeContext.
+ */
 const GrandChildComponent = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const { user, setUser } = useContext(AuthContext);
